@@ -1,0 +1,15 @@
+{
+    "name": "Your blocker",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action":{
+        "default_popup": "popup.html"
+    },
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["blocker.js"]
+        }
+    ],
+    "permissions": ["storage", "tabs"]
+}
